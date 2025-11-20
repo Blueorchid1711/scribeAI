@@ -1,0 +1,32 @@
+{
+  "name": "scribeai-scaffold",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:dev:next\" \"npm:dev:server\"",
+    "dev:next": "next dev -p 3000",
+    "dev:server": "node server/index.js",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "socket.io-client": "4.7.2",
+    "socket.io": "4.7.2",
+    "express": "4.18.2",
+    "prisma": "5.8.0",
+    "@prisma/client": "5.8.0",
+    "zod": "3.22.2",
+    "tailwindcss": "3.5.4",
+    "better-auth": "0.0.1-placeholder"
+  },
+  "devDependencies": {
+    "typescript": "5.6.2",
+    "eslint": "8.40.0",
+    "prettier": "2.8.8",
+    "concurrently": "8.2.0"
+  }
+}
